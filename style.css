@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Quicksand:wght@300..700&display=swap");
+
 * {
   outline: 1px solid red;
+}
+
+:root {
+  --text-color: #021526;
+  --background-color: #694f8e;
+  --calculator-color: #ffda76;
+  --button-color: #ff8c9e;
+  --button-text-color: #ff4e88;
+  --screen-color: #b4d6cd;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--calculator-color);
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 64px;
+}
+
+footer {
+  font-family: "Quicksand", sans-serif;
 }
