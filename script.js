@@ -1,6 +1,11 @@
 let num1;
 let num2;
 let operator;
+let display = "";
+let memory = "";
+
+const numberButtons = document.querySelectorAll(".number");
+const displayDiv = document.querySelector(".current-display");
 
 function add(x, y) {
   console.log("ADD");
@@ -38,3 +43,15 @@ function operate(x, y, operation) {
     return divide(x, y);
   }
 }
+
+function populateDisplay(val) {
+  display = `${display}${val}`;
+  displayDiv.textContent = display;
+}
+
+// event listener for numbers
+numberButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    populateDisplay(button.textContent);
+  });
+});
